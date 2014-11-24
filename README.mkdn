@@ -11,7 +11,7 @@ You will need to set up some directories in your build environment.
 To create them run:
 
     mkdir -p ~/bin
-    mkdir -p ~/liquid
+    mkdir -p ~/android/liquid
 
 Install the Repository
 ----------------------
@@ -32,7 +32,7 @@ Repositories:
 
 Before you continue --> run this in the terminal
 
-    repo init -u git://github.com/LiquidSmooth/android.git -b lollipop
+    repo init -u git://github.com/asce1062/android-LQ-5.0.git -b lollipop
 
     repo sync
     
@@ -46,5 +46,5 @@ Build LiquidSmooth with the following command
     
     lunch
     
-    time make liquid
+    brunch {DEVICE}
 

@@ -12,20 +12,32 @@
   <remote  name="gh"
            fetch="https://github.com/" />
 
+  <remote  name="ln"
+           fetch="git://android.git.linaro.org/" />
+
   <remote  name="ls"
            fetch="https://github.com/LiquidSmooth" />
 
   <remote  name="cm"
            fetch="git://github.com/CyanogenMod" />
 
+  <remote  name="omnirom"
+           fetch="https://github.com/omnirom" />      
+
   <remote  name="sr"
            fetch="git://github.com/SlimRoms" />
+
+  <remote  name="aospa"
+           fetch="https://github.com/AOSPA-legacy/" />
 
   <remote  name="lsd"
            fetch="https://github.com/LiquidSmooth-Devices" />
 
   <remote  name="tm"
            fetch="git://github.com/TheMuppets/" />
+
+  <remote  name="bb" 
+           fetch="https://bitbucket.org/" />
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
@@ -135,6 +147,7 @@
   <project path="external/eyes-free" name="platform/external/eyes-free" groups="pdk-cw-fw" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
   <project path="external/f2fs-tools" name="CyanogenMod/android_external_f2fs-tools" groups="pdk" />
   <project path="external/fdlibm" name="platform/external/fdlibm" groups="pdk" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
+  <!-- <project path="external/ffmpeg" name="CyanogenMod/android_external_ffmpeg" /> -->
   <project path="external/fio" name="platform/external/fio" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
   <project path="external/flac" name="CyanogenMod/android_external_flac" groups="pdk" />
   <project path="external/fonttools" name="platform/external/fonttools" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
@@ -265,6 +278,7 @@
   <project path="external/pdfium" name="platform/external/pdfium" groups="pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
   <project path="external/pigz" name="CyanogenMod/android_external_pigz" />
   <project path="external/pixman" name="platform/external/pixman" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
+  <!-- <project path="external/powertop" name="CyanogenMod/android_external_powertop" /> -->
   <project path="external/ppp" name="platform/external/ppp" groups="pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
   <project path="external/proguard" name="platform/external/proguard" groups="pdk-java,tradefed" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
   <project path="external/protobuf" name="platform/external/protobuf" groups="pdk" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
@@ -291,6 +305,7 @@
   <project path="external/square/javawriter" name="CyanogenMod/android_external_square_javawriter" />
   <project path="external/srec" name="platform/external/srec" groups="pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
   <project path="external/srtp" name="platform/external/srtp" groups="pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
+  <!-- <project path="external/stagefright-plugins" name="CyanogenMod/android_external_stagefright-plugins" /> -->
   <project path="external/stlport" name="platform/external/stlport" groups="pdk" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
   <project path="external/strace" name="CyanogenMod/android_external_strace" groups="pdk-cw-fs" />
   <project path="external/stressapptest" name="platform/external/stressapptest" groups="pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
@@ -308,6 +323,8 @@
   <project path="external/vim" name="CyanogenMod/android_external_vim" />
   <project path="external/webp" name="platform/external/webp" groups="pdk-cw-fs,qcom_msm8x26" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
   <project path="external/webrtc" name="platform/external/webrtc" groups="pdk" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
+  <!--project path="external/whispersystems/TextSecure" name="CyanogenMod/android_external_whispersystems_TextSecure" />
+  <project path="external/whispersystems/WhisperPush" name="CyanogenMod/android_external_whispersystems_WhisperPush" /-->
   <project path="external/wpa_supplicant_8" name="CyanogenMod/android_external_wpa_supplicant_8" groups="pdk" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" groups="pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" groups="pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
@@ -315,7 +332,7 @@
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
-  <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" groups="pdk" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="omnirom" revision="android-5.0" groups="pdk" />
   <project path="frameworks/base" name="android_frameworks_base" remote="ls" revision="lollipop"/>
   <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="CyanogenMod/android_frameworks_compile_mclinker" groups="pdk" />
@@ -325,7 +342,7 @@
   <project path="frameworks/minikin" name="CyanogenMod/android_frameworks_minikin" groups="pdk-cw-fs" />
   <project path="frameworks/ml" name="CyanogenMod/android_frameworks_ml" />
   <project path="frameworks/multidex" name="CyanogenMod/android_frameworks_multidex" groups="pdk-cw-fs" />
-  <project path="frameworks/native" name="CyanogenMod/android_frameworks_native" groups="pdk" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="omnirom" revision="android-5.0" groups="pdk" />
   <project path="frameworks/opt/bitmap" name="CyanogenMod/android_frameworks_opt_bitmap" />
   <project path="frameworks/opt/bluetooth" name="CyanogenMod/android_frameworks_opt_bluetooth" groups="pdk-cw-fs" />
   <project path="frameworks/opt/calendar" name="CyanogenMod/android_frameworks_opt_calendar" />
@@ -353,24 +370,14 @@
   <project path="frameworks/volley" name="CyanogenMod/android_frameworks_volley" />
   <project path="frameworks/webview" name="CyanogenMod/android_frameworks_webview" />
   <project path="frameworks/wilhelm" name="CyanogenMod/android_frameworks_wilhelm" />
-  <project path="hardware/akm" name="CyanogenMod/android_hardware_akm" groups="pdk" />
-  <project path="hardware/broadcom/libbt" name="CyanogenMod/android_hardware_broadcom_libbt" groups="pdk" />
-  <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" groups="broadcom_wlan" />
-  <project path="hardware/cm" name="CyanogenMod/android_hardware_cm" />
-  <project path="hardware/invensense" name="CyanogenMod/android_hardware_invensense" groups="invensense" />
-  <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" groups="pdk" />
-  <project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" groups="pdk" />
-  <project path="hardware/nvidia/audio" name="CyanogenMod/android_hardware_nvidia_audio" groups="nvidia_audio" />
+  <!-- <project path="hardware/nvidia/audio" name="CyanogenMod/android_hardware_nvidia_audio" groups="nvidia_audio" />
   <project path="hardware/nvidia/tegra124" name="CyanogenMod/android_hardware_nvidia_tegra124" groups="tegra124" />
   <project path="hardware/qcom/audio/default" name="CyanogenMod/android_hardware_qcom_audio" groups="qcom,qcom_audio" />
   <project path="hardware/qcom/audio-caf/msm8960" name="CyanogenMod/android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-12.0-caf-8960" />
   <project path="hardware/qcom/audio-caf/msm8974" name="CyanogenMod/android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-12.0-caf-8974" />
-  <project path="hardware/qcom/bt" name="CyanogenMod/android_hardware_qcom_bt" groups="qcom" />
   <project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" groups="qcom,qcom_display" />
   <project path="hardware/qcom/display-caf/msm8960" name="CyanogenMod/android_hardware_qcom_display" groups="qcom,qcom_display" revision="cm-12.0-caf-8960" />
   <project path="hardware/qcom/display-caf/msm8974" name="CyanogenMod/android_hardware_qcom_display" groups="qcom,qcom_display" revision="cm-12.0-caf-8974" />
-  <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" groups="qcom" />
-  <project path="hardware/qcom/keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" groups="qcom" />
   <project path="hardware/qcom/media/default" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" />
   <project path="hardware/qcom/media-caf/msm8960" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" revision="cm-12.0-caf-8960" />
   <project path="hardware/qcom/media-caf/msm8974" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" revision="cm-12.0-caf-8974" />
@@ -378,7 +385,22 @@
   <project path="hardware/qcom/msm8x26" name="platform/hardware/qcom/msm8x26" groups="qcom_msm8x26" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
   <project path="hardware/qcom/msm8x27" name="platform/hardware/qcom/msm8x27" groups="qcom_msm8x27" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
   <project path="hardware/qcom/msm8x74" name="platform/hardware/qcom/msm8x74" groups="qcom_msm8x74" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
-  <project path="hardware/qcom/msm8x84" name="platform/hardware/qcom/msm8x84" groups="qcom_msm8x84" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
+  <project path="hardware/qcom/msm8x84" name="platform/hardware/qcom/msm8x84" groups="qcom_msm8x84" remote="aosp" revision="refs/tags/android-5.0.0_r7" /> -->
+  <project path="hardware/akm" name="CyanogenMod/android_hardware_akm" groups="pdk" />
+  <project path="hardware/broadcom/libbt" name="CyanogenMod/android_hardware_broadcom_libbt" groups="pdk" />
+  <project path="hardware/broadcom/wlan" name="androidarmv6/android_hardware_broadcom_wlan" groups="broadcom_wlan" />
+  <project path="hardware/cm" name="CyanogenMod/android_hardware_cm" />
+  <project path="hardware/invensense" name="CyanogenMod/android_hardware_invensense" groups="invensense" />
+  <project path="hardware/libhardware" name="androidarmv6/android_hardware_libhardware" groups="pdk" />
+  <project path="hardware/libhardware_legacy" name="androidarmv6/android_hardware_libhardware_legacy" groups="pdk" />
+  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="omnirom" revision="android-5.0" />
+  <project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf" remote="omnirom" revision="android-5.0" />
+  <project path="hardware/qcom/bt" name="CyanogenMod/android_hardware_qcom_bt" groups="qcom" />
+  <project path="hardware/qcom/display-legacy" name="androidarmv6/android_hardware_qcom_display-legacy" groups="qcom,qcom_display" />
+  <project path="hardware/qcom/gps" name="androidarmv6/android_hardware_qcom_gps" groups="qcom" />
+  <project path="hardware/qcom/keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" groups="qcom" />
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="omnirom" revision="android-5.0" />
+  <project path="hardware/qcom/media-caf" name="android_hardware_qcom_media-caf" remote="omnirom" revision="android-5.0" />
   <project path="hardware/qcom/wlan" name="CyanogenMod/android_hardware_qcom_wlan" groups="qcom_wlan" />
   <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" groups="pdk" />
   <project path="hardware/samsung_slsi/exynos5" name="CyanogenMod/android_hardware_samsung_slsi_exynos5" />
@@ -386,6 +408,7 @@
   <project path="hardware/ti/omap4xxx" name="CyanogenMod/android_hardware_ti_omap4xxx" />
   <project path="hardware/ti/wlan" name="CyanogenMod/android_hardware_ti_wlan" />
   <project path="hardware/ti/wpan" name="CyanogenMod/android_hardware_ti_wpan" />
+  <project path="hardware/fm" name="CyanogenMod/android_hardware_qcom_fm" groups="pdk" />
   <project path="libcore" name="CyanogenMod/android_libcore" />
   <project path="libnativehelper" name="CyanogenMod/android_libnativehelper" groups="pdk-java" />
   <project path="ndk" name="platform/ndk" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
@@ -497,4 +520,6 @@
   <project path="tools/loganalysis" name="platform/tools/loganalysis" groups="notdefault,tradefed" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
   <project path="vendor/liquid" name="android_vendor_liquid" remote="ls" revision="lollipop"/>
+<!--Start P705-->
+  <project path="kernel/lge/msm7x27a-common" name="TeamHackLG/lge-kernel-lproj" remote="gh" revision="android-msm-3.4-kk" />
 </manifest>
