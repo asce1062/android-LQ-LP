@@ -32,7 +32,7 @@ Repositories:
 
 Before you continue --> run this in the terminal
 
-    repo init -u git://github.com/asce1062/android-LQ-5.0.git -b lollipop
+    repo init -u git://github.com/asce1062/android-LQ-LP.git -b lollipop
 
     repo sync
     
