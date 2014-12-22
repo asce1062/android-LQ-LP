@@ -535,8 +535,8 @@
   <project path="kernel/lge/msm7x27a-common" name="TeamHackLG/lge-kernel-lproj" remote="gh" revision="android-msm-3.4-kk" />
 <!-- display-caf -->
   <project name="kirmaniarslan/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm7x27a" remote="gh" revision="cm-12.0-caf-msm7x27a" />
-  <!--<project path="hardware/qcom/display-caf/msm7x27" name="androidarmv6/android_hardware_qcom_display-legacy" groups="qcom,qcom_display" />-->
+  <!-- <project path="hardware/qcom/display-caf/msm7x27" name="androidarmv6/android_hardware_qcom_display-legacy" groups="qcom,qcom_display" /> -->
 <!-- media-caf -->
   <project name="kirmaniarslan/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm7x27a" remote="gh" revision="cm-12.0-caf-legacy" />
-  <!--<project path="hardware/qcom/media-caf/msm7x27" name="androidarmv6/android_hardware_qcom_media-legacy" groups="qcom" />-->
+  <!-- <project path="hardware/qcom/media-caf/msm7x27" name="androidarmv6/android_hardware_qcom_media-legacy" groups="qcom" /> -->
 </manifest>
