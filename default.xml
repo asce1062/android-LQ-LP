@@ -531,6 +531,7 @@
 <!-- Device Tree, Kernel and Vendor -->
   <project path="device/lge/p700" name="TeamHackLG/android_device_lge_p700" remote="gh" revision="cm-11.0" />
   <project path="device/lge/p705" name="TeamHackLG/android_device_lge_p700" remote="gh" revision="cm-11.0" />
+  <project path="device/lge/msm7x27a-common" name="TeamHackLG/android_device_lge_msm7x27a-common" remote="gh" revision="cm-11.0" />
   <project path="vendor/lge" name="TeamHackLG/proprietary_vendor_lge" remote="gh" revision="cm-11.0" />
   <project path="kernel/lge/msm7x27a-common" name="TeamHackLG/lge-kernel-lproj" remote="gh" revision="android-msm-3.4-kk" />
 <!-- display-caf -->
