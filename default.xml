@@ -399,10 +399,8 @@
   <project path="hardware/libhardware_legacy" name="androidarmv6/android_hardware_libhardware_legacy" groups="pdk" />
   <project path="hardware/qcom/audio/default" name="CyanogenMod/android_hardware_qcom_audio" groups="qcom,qcom_audio" />
   <project path="hardware/qcom/bt" name="CyanogenMod/android_hardware_qcom_bt" groups="qcom" />
-  <project path="hardware/qcom/display-caf/msm7x27" name="androidarmv6/android_hardware_qcom_display-legacy" groups="qcom,qcom_display" />
   <project path="hardware/qcom/gps" name="androidarmv6/android_hardware_qcom_gps" groups="qcom" />
   <project path="hardware/qcom/keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" groups="qcom" />
-  <project path="hardware/qcom/media-caf/msm7x27" name="androidarmv6/android_hardware_qcom_media-legacy" groups="qcom" />
   <project path="hardware/qcom/wlan" name="CyanogenMod/android_hardware_qcom_wlan" groups="qcom_wlan" />
   <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" groups="pdk" />
   <project path="hardware/samsung_slsi/exynos5" name="CyanogenMod/android_hardware_samsung_slsi_exynos5" />
@@ -530,6 +528,15 @@
   <project path="tools/loganalysis" name="platform/tools/loganalysis" groups="notdefault,tradefed" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="vendor/liquid" name="android_vendor_liquid" remote="ls" revision="lollipop"/>
-<!--Start P705-->
+<!-- Device Tree, Kernel and Vendor -->
+  <project path="device/lge/p700" name="TeamHackLG/android_device_lge_p700" remote="gh" revision="cm-11.0" />
+  <project path="device/lge/p705" name="TeamHackLG/android_device_lge_p700" remote="gh" revision="cm-11.0" />
+  <project path="vendor/lge" name="TeamHackLG/proprietary_vendor_lge" remote="gh" revision="cm-11.0" remote="github"/>
   <project path="kernel/lge/msm7x27a-common" name="TeamHackLG/lge-kernel-lproj" remote="gh" revision="android-msm-3.4-kk" />
+<!-- display-caf -->
+  <project name="kirmaniarslan/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm7x27a" remote="gh" revision="cm-12.0-caf-msm7x27a" />
+  <!--<project path="hardware/qcom/display-caf/msm7x27" name="androidarmv6/android_hardware_qcom_display-legacy" groups="qcom,qcom_display" />-->
+<!-- media-caf -->
+  <project name="kirmaniarslan/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm7x27a" remote="gh" revision="cm-12.0-caf-legacy" />
+  <!--<project path="hardware/qcom/media-caf/msm7x27" name="androidarmv6/android_hardware_qcom_media-legacy" groups="qcom" />-->
 </manifest>
