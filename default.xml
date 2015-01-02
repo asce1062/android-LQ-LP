@@ -59,7 +59,6 @@
   <project path="art" name="androidarmv6/android_art" groups="pdk" />
   <project path="bionic" name="androidarmv6/android_bionic" groups="pdk" />
   <project path="bootable/recovery" name="androidarmv6/android_bootable_recovery" groups="pdk" />
-  <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="dalvik" name="androidarmv6/android_dalvik" groups="pdk-cw-fs" />
   <project path="development" name="CyanogenMod/android_development" groups="pdk-cw-fs" />
   <project path="device/common" name="CyanogenMod/android_device_common" groups="pdk-cw-fs" />
@@ -331,7 +330,7 @@
   <project path="external/stlport" name="platform/external/stlport" groups="pdk" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="external/strace" name="CyanogenMod/android_external_strace" groups="pdk-cw-fs" />
   <project path="external/stressapptest" name="platform/external/stressapptest" groups="pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
-  <project path="external/svox" name="CyanogenMod/android_external_svox" groups="pdk-cw-fs" />
+  <project path="external/svox" name="platform/external/svox" groups="pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="external/tagsoup" name="platform/external/tagsoup" groups="pdk-cw-fs,tradefed" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="external/tcpdump" name="CyanogenMod/android_external_tcpdump" groups="pdk,pdk-cw-fs" />
   <project path="external/timezonepicker-support" name="platform/external/timezonepicker-support" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
@@ -403,6 +402,7 @@
   <project path="hardware/qcom/keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" groups="qcom" />
   <project path="hardware/qcom/wlan" name="CyanogenMod/android_hardware_qcom_wlan" groups="qcom_wlan" />
   <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" groups="pdk" />
+  <project path="hardware/ril-caf" name="CyanogenMod/android_hardware_ril" groups="pdk" revision="cm-12.0-caf" />
   <project path="hardware/samsung_slsi/exynos5" name="CyanogenMod/android_hardware_samsung_slsi_exynos5" />
   <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="hardware/ti/omap4xxx" name="CyanogenMod/android_hardware_ti_omap4xxx" />
@@ -434,10 +434,9 @@
   <project path="packages/apps/KeyChain" name="CyanogenMod/android_packages_apps_KeyChain" />
   <project path="packages/apps/LiquidStats" name="android_packages_apps_LiquidStats" remote="ls" revision="lollipop" />
   <project path="packages/apps/LiquidUpdater" name="android_packages_apps_LiquidUpdater" remote="ls" revision="lollipop" />
-  <project path="packages/apps/LockClock" name="CyanogenMod/android_packages_apps_LockClock" />
+  <project path="packages/apps/LockClock" name="android_packages_apps_LockClock" remote="ls" revision="lollipop" />
   <project path="packages/apps/Mms" name="CyanogenMod/android_packages_apps_Mms-caf" />
   <project path="packages/apps/Nfc" name="CyanogenMod/android_packages_apps_Nfc" />
-  <project path="packages/apps/OMA-DM" name="CyanogenMod/android_packages_apps_OMA-DM" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="packages/apps/PackageInstaller" name="CyanogenMod/android_packages_apps_PackageInstaller" />
   <project path="packages/apps/PerformanceControl" name="android_packages_apps_PerformanceControl" remote="ls" revision="lollipop" />
@@ -448,10 +447,8 @@
   <project path="packages/apps/SmartCardService" name="CyanogenMod/android_packages_apps_SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="CyanogenMod/android_packages_apps_SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
-  <project path="packages/apps/SpeechRecorder" name="CyanogenMod/android_packages_apps_SpeechRecorder" />
   <project path="packages/apps/Stk" name="CyanogenMod/android_packages_apps_Stk" />
   <project path="packages/apps/Tag" name="CyanogenMod/android_packages_apps_Tag" />
-  <project path="packages/apps/TvSettings" name="CyanogenMod/android_packages_apps_TvSettings" />
   <project path="packages/apps/UnifiedEmail" name="CyanogenMod/android_packages_apps_UnifiedEmail" />
   <project path="packages/inputmethods/LatinIME" name="androidarmv6/android_packages_inputmethods_LatinIME" />
   <project path="packages/inputmethods/OpenWnn" name="CyanogenMod/android_packages_inputmethods_OpenWnn" />
@@ -462,7 +459,6 @@
   <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="ls" revision="lollipop" />
   <project path="packages/providers/PartnerBookmarksProvider" name="CyanogenMod/android_packages_providers_PartnerBookmarksProvider" />
   <project path="packages/providers/TelephonyProvider" name="CyanogenMod/android_packages_providers_TelephonyProvider" />
-  <project path="packages/providers/TvProvider" name="CyanogenMod/android_packages_providers_TvProvider" />
   <project path="packages/providers/UserDictionaryProvider" name="CyanogenMod/android_packages_providers_UserDictionaryProvider" />
   <project path="packages/services/Mms" name="CyanogenMod/android_packages_services_Mms" />
   <project path="packages/services/Telecomm" name="CyanogenMod/android_packages_services_Telecomm" />
@@ -493,14 +489,10 @@
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" groups="pdk,linux" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" groups="pdk,linux" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
-  <project path="prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" groups="pdk,linux,mips" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
-  <project path="prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.8" name="platform/prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.8" groups="pdk,linux,mips" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
-  <project path="prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.8" name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.8" groups="pdk,linux,mips" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.8" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.8" groups="pdk,linux,x86" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" groups="pdk,linux,x86" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="prebuilts/gradle-plugin" name="platform/prebuilts/gradle-plugin" groups="pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="prebuilts/libs/libedit" name="platform/prebuilts/libs/libedit" groups="pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
-  <project path="prebuilts/maven_repo/android" name="platform/prebuilts/maven_repo/android" groups="pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="prebuilts/misc" name="platform/prebuilts/misc" groups="pdk,tradefed" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="prebuilts/ndk" name="platform/prebuilts/ndk" remote="aosp" revision="refs/tags/android-5.0.2_r1" groups="pdk" />
   <project path="prebuilts/python/darwin-x86/2.7.5" name="platform/prebuilts/python/darwin-x86/2.7.5" groups="darwin" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
@@ -517,27 +509,18 @@
   <project path="system/qcom" name="CyanogenMod/android_system_qcom" groups="qcom" />
   <project path="system/security" name="CyanogenMod/android_system_security" groups="pdk" />
   <project path="system/vold" name="CyanogenMod/android_system_vold" groups="pdk" />
-  <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
-  <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="tools/build" name="platform/tools/build" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
-  <project path="tools/emulator" name="platform/tools/emulator" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
-  <project path="tools/external/fat32lib" name="platform/tools/external/fat32lib" groups="tools" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
-  <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="tools" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="tools/loganalysis" name="platform/tools/loganalysis" groups="notdefault,tradefed" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="vendor/liquid" name="android_vendor_liquid" remote="ls" revision="lollipop"/>
-<!-- Device Tree, Kernel and Vendor -->
-  <project path="device/lge/p700" name="TeamHackLG/android_device_lge_p700" remote="gh" revision="cm-11.0" />
-  <project path="device/lge/p705" name="TeamHackLG/android_device_lge_p700" remote="gh" revision="cm-11.0" />
-  <project path="device/lge/msm7x27a-common" name="TeamHackLG/android_device_lge_msm7x27a-common" remote="gh" revision="cm-11.0" />
-  <project path="vendor/lge" name="TeamHackLG/proprietary_vendor_lge" remote="gh" revision="cm-11.0" />
-  <project path="kernel/lge/msm7x27a-common" name="TeamHackLG/lge-kernel-lproj" remote="gh" revision="android-msm-3.4-kk" />
-<!-- display-caf -->
-  <project name="kirmaniarslan/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm7x27a" remote="gh" revision="cm-12.0-caf-msm7x27a" />
-  <!-- <project path="hardware/qcom/display-caf/msm7x27" name="androidarmv6/android_hardware_qcom_display-legacy" groups="qcom,qcom_display" /> -->
-<!-- media-caf -->
-  <project name="kirmaniarslan/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm7x27a" remote="gh" revision="cm-12.0-caf-legacy" />
-  <!-- <project path="hardware/qcom/media-caf/msm7x27" name="androidarmv6/android_hardware_qcom_media-legacy" groups="qcom" /> -->
-</manifest>
+  <!-- P705 Optimus L7 -->
+  <project path="vendor/lge" name="cyanlge/proprietary_vendor_lge" remote="github" revision="cm-12.0"/>
+  <project path="device/lge/p705" name="cyanlge/android_device_lge_p705" remote="github" revision="cm-12.0"/>
+  <project path="device/lge/msm7x27a-common" name="cyanlge/android_device_lge_msm7x27a-common" remote="github" revision="cm-12.0"/>
+  <project path="kernel/lge/msm7x27a-common" name="cyanlge/lge-kernel-lproj" remote="github" revision="cm-12.0" />
+  <!-- cAF -->
+  <project path="hardware/qcom/display-caf/msm7x27a" name="cyanlge/android_hardware_qcom_display" groups="qcom,qcom_display" revision="cm-12.0-caf-msm7x27a" />
+  <project path="hardware/qcom/media-caf/msm7x27a" name="cyanlge/android_hardware_qcom_media" groups="qcom" revision="cm-12.0-caf-legacy" />
+  <project path="hardware/qcom/audio-caf" name="omnirom/android_hardware_qcom_audio-caf" revision="android-5.0" />
